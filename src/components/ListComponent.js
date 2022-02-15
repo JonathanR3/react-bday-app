@@ -10,10 +10,11 @@ function ListComponent({ data, setMonthValue, setBdays }) {
             setBdays(array.length);
             return (
               <>
+              <img src = {person.image} width ="200"/>
               <div>{person.name}</div>
               <div>{person.year}</div>
               <div>{person.age}</div>
-              <a href={'mailto:${person.email}'}>Send Birthday Greeting</a>
+              {person.email ? <a href="">Send Greetings</a>:""}
               </>
             )
           })}
