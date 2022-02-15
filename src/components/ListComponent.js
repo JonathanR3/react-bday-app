@@ -11,7 +11,9 @@ function ListComponent({ data, setMonthValue, setBdays }) {
             return (
               <>
               <div>{person.name}</div>
+              <div>{person.year}</div>
               <div>{person.age}</div>
+              <a href={'mailto:${person.email}'}>Send Birthday Greeting</a>
               </>
             )
           })}
